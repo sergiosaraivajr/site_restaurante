@@ -1,0 +1,9 @@
+projeto de construção de um site para um restaurante;
+
+link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+para icones
+
+*** 
+implementar um carousel responsivo usando a biblioteca Bootstrap;
+configurar recursos de autoplay no carousel;
+dominar a aplicação de classes e estilos fornecidos pelo Bootstrap para personalizar a aparência do carousel.

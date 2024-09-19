@@ -1,0 +1,50 @@
+body {
+    font-family: roboto, sans-serif;
+}
+
+.navbar {
+    background-color: #e15f41;
+}
+
+.nav .nav-link.active {
+    background-color: #fff;
+    color: #e15f41;
+}
+
+.nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover {
+    color: #fff;
+}
+
+/* adicionar uma cor de fundo suave ao passar o mouse sobre os links da navegação */
+.nav .nav-link:hover {
+    background-color: #ffeae6b6;
+    color: #e15f41;
+    transition: background-color 0.3s ease;
+}
+
+/*garantir que o menu fique bem distribuído em dispositivos menores*/
+.navbar-collapse {
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-toggler {
+    background-color: #ffeae6;
+}
+
+.section-title {
+    font-family: pacifico, cursive;
+}
+
+.section-title span {
+    color: #e15f41;
+}
+
+#sobre-o-restaurante {
+    background-color: #ffeae6;
+}
