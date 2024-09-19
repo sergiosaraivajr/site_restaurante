@@ -14,7 +14,9 @@
 <body>
     <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
         <div class="container">
-            <h1 class="navbar-brand m-0 section-title">Nome do restaurante</h1><!--m-0 alinha a brand com margin 0-->
+            <a href="#sobre-o-restsaurante" class="nav-link">
+                <h1 class="navbar-brand m-0 section-title">Nome do restaurante</h1><!--m-0 alinha a brand com margin 0-->
+            </a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,7 +46,7 @@
             </nav>
         </div>
     </header>
-    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
         <section id="sobre-o-restsaurante">
             <div class="carousel slide" data-bs-ride="carousel" id="carousel"> <!--data-bs-ride="carousel ''inicia' o carousel-->
                 <div class="carousel-inner">
@@ -70,13 +72,13 @@
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
                 </div>
             </div>
-            <div id="sobre-o-restaurante" class="pt-5 pb-5">
+            <div id="sobre-o-restaurante" class="p-5">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
-                            <img src="./img/restaurante.jpg" class="d-block w-100 rounded" alt="Foto do espaço interno do restaurante">
+                            <img src="./img/restaurante.jpg" class="d-block w-100 rounded imgsobre" alt="Foto do espaço interno do restaurante">
                         </div> <!--rounded classe bs que arredonda a borda da imagem-->
-                        <div class="col-md-7">
+                        <div class="col-md-7 mt-3 mt-md-0">
                             <h2 class="section-title">Sobre <span class="text-colored">o restaurante</span></h2>
                             <p>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus fugit quia id suscipit aut doloribus obcaecati consequuntur, voluptas officiis impedit? Unde eaque nulla voluptate nisi obcaecati, aliquid voluptatum illum doloribus?
@@ -308,6 +310,20 @@
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/cardapio/sobremesas/bolo.jpg" alt="Bolo de chocolate"/>
+                                        <h5 class="text-colored fw-bold mt-2">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/cardapio/sobremesas/cupcake.jpg" alt="Cupcacke"/>
+                                        <h5 class="text-colored fw-bold mt-2">Cupcacke</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -321,21 +337,24 @@
                     <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-7 mb-5">
                         <form>
-                            <div class="mb-3">
+                            <div class="mb-3 input-with-icon">
                                 <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
                                 <input type="text" id="nome" class="form-control" required>
+                                    <i class="bi bi-person text-colored"></i>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 input-with-icon">
                                 <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
-                                <input type="email" id="nome" class="form-control" required>
+                                <input type="email" id="nome" class="form-control" placeholder="email@exemplo.com" required>
+                                    <i class="bi bi-at text-colored"></i>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 input-with-icon">
                                 <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
                                 <input type="tel" id="telefone" class="form-control">
+                                    <i class="bi bi-telephone text-colored"></i>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 input-with-icon">
                                 <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
                                 <textarea id="mensagem" class="form-control" required></textarea>
                             </div>
@@ -378,7 +397,22 @@
             </div>
         </section>
     </div>
-
+    <div class="rodape text-colored">
+        <footer>
+            <div class="container container-flex">
+                <p>
+                    2024 &copy; S3 Sistemas - Todos os direitos reservados.
+                </p>
+            </div>
+        </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
